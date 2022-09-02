@@ -4,13 +4,13 @@ void FillArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
-    while(index<length)
+    while (index < length)
     {
-        collection[index] = new Random().Next(100,1000);
+        collection[index] = new Random().Next(100, 1000);
         index++;
     }
 }
-void PrintArray(int [] coll)
+void PrintArray(int[] coll)
 {
     int count = coll.Length;
     int pos = 0;
@@ -24,21 +24,21 @@ void PrintArray(int [] coll)
 }
 Console.WriteLine("Введите количество элементов массива");
 int a = int.Parse(Console.ReadLine());
-int [] array = new int[a];
+int[] array = new int[a];
 
-FillArray (array);
-PrintArray (array);
+FillArray(array);
+PrintArray(array);
 
 int length1 = array.Length;
 int j = 0;
 int count1 = 0;
-while (j<length1)
+while (j < length1)
 {
-    if(array[j]%2 == 0)
+    if (array[j] % 2 == 0)
     {
         count1 = count1 + 1;
     }
-j++;
+    j++;
 }
 Console.Write(" -> " + count1);
 
